@@ -58,7 +58,7 @@ form .title {
     margin: 0;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* fill: currentColor; */
+    
 }
 
 .field:focus-within .form-field,
@@ -93,21 +93,15 @@ form .title {
     padding: 0;
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
-}
 
-.field-checkbox:focus-within+.checkbox-icon {
-    border: 2px solid var(--accent-color)
-}
+    .field-checkbox:focus-within+& {
+            border: 2px solid var(--accent-color)
+        }
 
-
-
-.field-checkbox:focus-within+.checkbox-icon {
-    border: 2px solid var(--accent-color)
-}
-
-.field-checkbox:checked+.checkbox-icon {
-    background-color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+     .field-checkbox:checked+& {
+        background-color: var(--accent-color);
+         border: 2px solid var(--accent-color);
+    }
 }
 
 .field-label a {

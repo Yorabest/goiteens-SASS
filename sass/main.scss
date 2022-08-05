@@ -1,5 +1,8 @@
 @import "./variabels/variables";
+
 @import "./utils/utils";
+@import "./utils/mixins";
+
 @import "./components/common";
 @import "./components/header";
 @import "./components/hero";
@@ -9,6 +12,7 @@
 @import "./components/our-team";
 @import "./components/customers";
 @import "./components/footer";
+
 @import "./components/portfolio/filters";
 @import "./components/portfolio/examples";
 @import "./components/portfolio/overlay-on-cards";

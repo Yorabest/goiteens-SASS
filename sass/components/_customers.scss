@@ -7,9 +7,10 @@
 }
 
 .customers-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    @include centeredFlex (center);
 
     width: 170px;
     height: 90px;

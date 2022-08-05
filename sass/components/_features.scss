@@ -25,9 +25,10 @@
 }
 
 .features-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+@include centeredFlex (center) ;
 
   width: 270px;
   height: 120px;
