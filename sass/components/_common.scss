@@ -17,11 +17,29 @@
 }
 
 .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
+    width: 100%;
+    
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    
+        @media (min-width: $mobile) {
+            width: 480px;
+            background-color: blueviolet;
+        }
+    
+        @media (min-width: $tablet) {
+            width: 768px;
+            background-color: brown;
+        }
+    
+        @media (min-width: $desktop) {
+            width: 1200px;
+            background-color: aqua;
+        }
+        
+    }
+       
+         
