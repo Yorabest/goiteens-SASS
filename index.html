@@ -16,10 +16,74 @@
 
 <body>
     <!-- Шапка -->
-    <!-- <header>
+    <header>
         <div class="header-nav container">
             <a class="logo" href="./"><span>Web</span>Studio</a>
-            <nav>
+
+            <button type="button" class="mobile-button" data-menu-button aria-expanded="false">
+                <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use class="mobile-close" href="./img/icons.svg#mobile-menu"> </use>
+                    <use class="mobile-open" href="./img/icons.svg#icon-close"></use>
+
+                </svg>
+            </button>
+
+            <div class="mobile-menu" id="mobile-menu" data-menu>
+                <div>
+                    <nav class="navigation">
+                        <ul class="nav-list">
+                            <li class="list-item"><a class="link current" href="./">Студія</a></li>
+                            <li class="list-item"><a class="link" href="./portfolio.html" target="_blank"
+                                    rel="noopener noreferer">Портфоліо</a></li>
+                            <li class="list-item"><a class="link" href="">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <div class="contacts">
+                        <ul class="contacts-list">
+                            <li class="contacts-item">
+                                <a class="contacts-link" href="mailto:info@devstudio.com">
+                                    <svg class="contact-icon" width="16" height="12">
+                                        <use href="./img/icons.svg#icon-envelope-hover"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="contacts-item"><a class="contacts-link" href="tel:+380961111111">
+                                    <svg class="contact-icon" width="10" height="16">
+                                        <use href="./img/icons.svg#icon-Phone"></use>
+                                    </svg>
+                                    +38 096 111 11 11</a></li>
+                        </ul>
+
+                    </div>
+                    <ul class="networks-list">
+                        <li class="networks-item">
+                            <a href="" rel="noopener, noreferer" class="networks-link">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="networks-item">
+                            <a href="" rel="noopener, noreferer" class="networks-link">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="networks-item">
+                            <a href="" rel="noopener, noreferer" class="networks-link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="networks-item">
+                            <a href="" rel="noopener, noreferer" class="networks-link">
+                                Linkedin
+                            </a>
+                        </li>
+                    </ul>>
+                </div>
+
+            </div>
+            <!-- <nav>
                 <ul class="nav-list">
                     <li class="list-item"><a class="link current" href="./">Студія</a></li>
                     <li class="list-item"><a class="link" href="./portfolio.html" target="_blank"
@@ -41,26 +105,26 @@
                             <use href="./img/icons.svg#icon-Phone"></use>
                         </svg>
                         +38 096 111 11 11</a></li>
-            </ul>
+            </ul> -->
         </div>
-    </header> -->
+    </header>
     <!-- Основна секція -->
     <main>
         <!-- Секція герой -->
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero-title">ефективні рішення для
                     </br>
                     вашого бізнесу
                 </h1>
                 <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
-            </div> -->
-        <!-- Модальне вікно -->
-        <!-- <div class="backdrop is-hidden" data-modal>
+            </div>
+            <!-- Модальне вікно -->
+            <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button type="button" class="modal-button" data-modal-close></button>
-                    <-- Форма модального вікна -->
-        <!--   <form class="form js-speaker-form" autocomplete="on">
+                    <!-- Форма модального вікна -->
+                    <form class="form js-speaker-form" autocomplete="on">
                         <h3 class="title">Залиште свої дані, ми Вам зателефонуємо</h3>
                         <ul class="fields">
                             <li class="field">
@@ -107,7 +171,7 @@
                     </form>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- Секція особливості -->
         <section class="section">
@@ -162,7 +226,7 @@
             </div>
         </section>
         <!-- Секція чим ми займаємось -->
-        <section class="section">
+        <section class="section work">
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="image">
@@ -338,7 +402,7 @@
             </div>
         </section>
         <!-- клієнпостійніти -->
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="section-title">Постійні клієнти</h2>
                 <ul class="customers">
@@ -386,11 +450,11 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <!-- Футер -->
     <footer class="footer">
-        <div class="container footer-items">
+        <div class="container footer-container">
             <!-- Лого та контакти -->
             <div class="footer-contacts">
                 <a class="footer-logo" href=""><span>Web</span>Studio</a>
@@ -406,7 +470,7 @@
             </div>
             <!-- Приєднуйтесь -->
             <div class="join">
-                <b class="join-networks">Приєднуйтесь</b>
+                <h3 class="join-networks">Приєднуйтесь</h3>
                 <ul class="social-network-list">
                     <li class="network-item">
                         <a class="social-link" href="">
@@ -437,10 +501,19 @@
                         </a>
                 </ul>
             </div>
+            <!-- <div class="footer-form">
+                <form class="mailing">
+                    <h3 class="join-networks">Підпишіться на розсилку</h3>
+                    <input class="footer-input" type="email" name="user-mail" placeholder="E-mail">
+                    <button type="submit" class="hero-button">Підписатись</button>
+                    btn
+                </form>
+            </div> -->
         </div>
     </footer>
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/form.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
 </body>
 
 </html>

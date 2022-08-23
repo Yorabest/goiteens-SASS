@@ -3,21 +3,43 @@
 }
 
 .team {
-  display: flex;
-  justify-content: space-between;
-}
+  line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-.team-link:not(:last-child) {
-  margin-right: 30px;
+  @media(min-width: $tablet){
+    display:flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop){
+    margin: -15px;
+  }
 }
 
 .team-link {
-  width: 270px;
+  // width: 270px;
   padding-bottom: 30px;
 
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: $tablet){
+    width:  calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+     @media screen and (min-width: $desktop){
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
+     }
+
+     &:not(:last-child){
+      @media screen and (max-width: $tablet){
+      margin-bottom: 30px;
+      }
+     }
 }
 
 .team .name {
@@ -63,6 +85,12 @@
   height: 44px;
   border-radius: 50%;
   color: var(--svg);
+
+ &:hover,
+ &:focus {
+    color: var(--background-color);
+    background-color: var(--accent-color);
+  }
 }
 
 .social-icon {
@@ -70,8 +98,4 @@
   margin: 12px;
 }
 
-.social-link:hover,
-.social-link:focus {
-  color: var(--background-color);
-  background-color: var(--accent-color);
-}
+

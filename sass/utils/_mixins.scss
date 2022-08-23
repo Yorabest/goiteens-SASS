@@ -1,4 +1,4 @@
-@mixin centeredFlex () {
+@mixin centeredFlex ($param) {
      display: flex;
      justify-content:$param;
      align-items: center;

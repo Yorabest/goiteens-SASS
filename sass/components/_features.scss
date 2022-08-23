@@ -52,7 +52,7 @@
   // align-items: center;
 @include centeredFlex (center) ;
 
-  width: 270px;
+  // width: 270px;
   height: 120px;
 
   margin-bottom: 30px;
@@ -70,6 +70,12 @@
 }
 
 /*чим ми займаємось*/
+.section.work{
+  padding: 0px;
+  @media (max-width:1199px){
+    display: none;
+  }
+}
 
 .image {
   display: flex;

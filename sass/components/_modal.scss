@@ -33,6 +33,18 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media (min-wdth:$mobile){
+     width: 450px;
+     max-height: 690px;
+     height: 100%;
+     overflow: scroll;
+    }
+
+    @media (min-wdth:$desktop){
+        width: 528px;
+        height: 581px;
+
+    }
     .backdrop.is-hidden & {
             transform: translate(-50%, -50%) scale(0.7) rotateY(450deg);
         }

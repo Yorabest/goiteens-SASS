@@ -3,9 +3,21 @@
     padding-top: 60px;
 }
 
-.footer-items {
-    display: flex;
-    align-items: baseline;
+.container.footer-container {
+    @media (max-width: 767px){
+      text-align: center;
+    }
+
+      @media (min-width: $tablet) {
+        display: flex;
+         justify-content: space-around;
+     }
+
+    @media(min-width: $desktop){
+         display: flex;
+         align-items: baseline;
+    }
+   
 }
 
 .footer,
@@ -39,17 +51,26 @@
 }
 
 .footer-contacts {
-    margin-right: 70px;
+@media (max-width:767px){
+margin-bottom: 60px;
+}
+
+    @media (min-wdth:$desktop){
+        margin-right: 70px;
+    }
+    
 }
 
 .footer-contacts-link {
     color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+   }
 }
 
-.footer-contacts-link:hover,
-.footer-contacts-link:focus {
-    color: var(--accent-color);
-}
+
 
 /* Приєднуйтесь */
 
@@ -71,6 +92,12 @@
     background-color: rgba(255, 255, 255, 0.1);
     /* #2f303a */
     color: var(--background-color);
+
+   &:hover,
+   &:focus {
+         background-color: var(--accent-color);
+         /* color: red; */
+     }
 }
 
 
@@ -80,8 +107,17 @@
     fill: currentColor;
 }
 
-.join .social-link:hover,
-.join .social-link:focus {
-    background-color: var(--accent-color);
-    /* color: red; */
+
+
+// Розсилка
+
+.footer-input{
+    width: 450px;
+    height: 50px;
+
+    border-color:  #FFFFFF4D;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+    background-color: #2F303A;
 }

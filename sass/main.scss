@@ -5,6 +5,13 @@
 @import "./utils/mixins";
 
 @import "./components/common";
+
+@import "./components/header/contacts";
+@import "./components/header/logo";
+@import "./components/header/menu";
+@import "./components/header/navigation";
+@import "./components/header/networks";
+
 @import "./components/header";
 @import "./components/hero";
 @import "./components/modal";

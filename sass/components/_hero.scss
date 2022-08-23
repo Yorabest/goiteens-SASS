@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
 
     &-title {
-            display: block;
+            display:block;
     
     
             margin-top: 0px;
@@ -28,6 +28,11 @@
             line-height: 1.4;
             text-align: center;
             letter-spacing: 0.06em;
+
+            @media (max-width:1199px){
+                font-size: 26px;
+                line-height: 1.6;
+            }
         }
 
          &-button {
